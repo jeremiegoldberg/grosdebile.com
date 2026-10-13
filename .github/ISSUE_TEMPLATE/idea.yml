@@ -1,0 +1,32 @@
+name: Proposer une idée
+description: Proposer une direction, un concept ou un prototype pour grosdebile.com
+title: "[Idée] "
+labels:
+  - idée
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Toutes les idées originales sont les bienvenues, des plus utiles aux plus absurdes.
+  - type: textarea
+    id: concept
+    attributes:
+      label: L'idée
+      description: Qu'est-ce que grosdebile.com pourrait devenir ?
+      placeholder: Décris ton idée en quelques phrases.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Pourquoi ce serait bien ?
+      description: Qu'est-ce qui rend cette idée drôle, utile, étrange ou intéressante ?
+    validations:
+      required: true
+  - type: textarea
+    id: first_step
+    attributes:
+      label: Première étape possible
+      description: Une façon simple de prototyper ou tester l'idée.
+    validations:
+      required: false
